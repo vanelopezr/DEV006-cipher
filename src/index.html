@@ -6,9 +6,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+      <h1>Cifrado César</h1>
+      <input id ="offset" type="number" inputmode="numeric" placeholder="Ingresa la clave" />
+
+      <div><button id="nextbtn" type="button">Siguiente</button> </div>
+<h3>Mensaje: </h3>
+<input type ="text" id="messageInput" placeholder = "Ingresa el mensaje">
+
+<div><button id="codebtn" type="button" onclick = "codeMessage(); printChar()">Cifrar </button><button id="decodebtn" type="button">Descifrar</button></div>
+<h3>Mensaje Cifrado/Descifrado:</h3>
+<input type ="text" id="messageResult">
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
