@@ -14,4 +14,10 @@ section {
     outline-width: 25px;
     outline-color:   #030303    ;
 }
+
+span {
+    font-size: xx-large;
+    font-style:unset ;
+    color:  #f50e3f ;
+}
      
