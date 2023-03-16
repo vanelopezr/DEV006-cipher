@@ -6,17 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section>
       <h1>Cifrado César</h1>
       <input id ="offset" type="number" inputmode="numeric" placeholder="Ingresa la clave" />
 
       <div><button id="nextbtn" type="button">Siguiente</button> </div>
 <h3>Mensaje: </h3>
-<input type ="text" id="messageInput" placeholder = "Ingresa el mensaje">
+<textarea  id = "messageInput" placeholder="Escriba aquí el mensaje">
+</textarea>
 
-<div><button id="codebtn" type="button" onclick = "codeMessage(); printChar()">Cifrar </button><button id="decodebtn" type="button">Descifrar</button></div>
+<div><button id="codebtn" onclick="">Cifrar</button>
+  <button id="decodebtn" onclick="">Descifrar</button></div>
 <h3>Mensaje Cifrado/Descifrado:</h3>
-<input type ="text" id="messageResult">
+<textarea  id = "messageResult" placeholder="Tu mensaje cifrado/descrifrado"> 
+</textarea>
+<div><button id="back" onclick="">Volver</button></div>
 
     <script src="index.js" type="module"></script>
-  </body>
+
+  </section>
+  
+</body>
 </html>
