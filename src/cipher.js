@@ -1,34 +1,41 @@
 const cipher = {
 
-  encode: (inputMessage, offset) => {
-    const messageValue = inputMessage.value;
-    const offsetValue = offset.value;
+  encode: (offset, string) => {
+    //obtener los valores
     let result = "";
-    for (let i = 0; i < messageValue.length; i++) {
-      const asciiPosition = messageValue[i].charCodeAt();
+    if (typeof offset !== "number" || typeof string !== "string") {
+      throw  TypeError ("Ingrese caracteres válidos"); }
+    //iterar en cada letra y obtener el número ascii
+    for (let i = 0; i < string.length; i++) {
+      const asciiPosition = string[i].charCodeAt();
       if (asciiPosition >= 65 && asciiPosition <= 90) {
-        const asciiTxt = (((asciiPosition - 65 + parseInt(offsetValue)) % 26) + 65);
+        //aplicar la formula
+        const asciiTxt = (((asciiPosition - 65 + offset) % 26) + 65);
         result += String.fromCharCode(asciiTxt);
+        //agregar los espacios
+      } else if (asciiPosition === 32) { 
+        result += " ";
       }
     }
     return result;
   },
 
-  decode: (inputMessage, offset) => {
-    const messageValue = inputMessage.value;
-    const offsetValue = offset.value;
+  decode: (offset, string) => {
     let result = "";
-    for (let i = 0; i < messageValue.length; i++) {
-      const asciiPosition = messageValue[i].charCodeAt();
+    if (typeof offset !== "number" || typeof string !== "string") {
+      throw  TypeError ("Ingrese caracteres válidos"); }
+    for (let i = 0; i < string.length; i++) {
+      const asciiPosition = string[i].charCodeAt();
       if (asciiPosition >= 65 && asciiPosition <= 90) {
-        result += String.fromCharCode(((asciiPosition - 65 - parseInt(offsetValue) + 26) % 26) + 65);
+        result += String.fromCharCode((((asciiPosition - 65 - offset + 26)+26) % 26) + 65);
+      } else if (asciiPosition === 32) { 
+        result += " ";
       } else {
-        result += messageValue[i];
+        result += string[i];
       }
     }
     return result;
   }
 
 }
-
 export default cipher;
