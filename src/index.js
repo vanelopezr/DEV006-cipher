@@ -14,14 +14,14 @@ string.addEventListener("input", function() {
 const encodeButton = document.getElementById ("encodeButton");
 encodeButton.addEventListener("click",function () {
 
-  result.innerHTML = cipher.encode(parseInt(offset.value),string.value );
+  result.innerHTML = cipher.encode(parseInt(offset.value),string.value);
   
 })
 
 const decodeButton = document.getElementById ("decodeButton");
 decodeButton.addEventListener ("click", function(){
 
-  result.innerHTML = cipher.decode (parseInt(offset.value), string.value, );
+  result.innerHTML = cipher.decode (parseInt(offset.value), string.value);
 })
 
 //recargar el sitio 

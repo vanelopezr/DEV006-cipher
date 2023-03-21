@@ -29,7 +29,7 @@ const cipher = {
       if (asciiPosition >= 65 && asciiPosition <= 90) {
         result += String.fromCharCode((((asciiPosition - 65 - offset + 26)+26) % 26) + 65);
       } else if (asciiPosition === 32) { 
-        result += " ";
+        result += " ";    
       } else {
         result += string[i];
       }
