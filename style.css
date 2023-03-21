@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+body { 
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("https://i.pinimg.com/564x/21/22/40/212240445cf5f74f0e8fcab8feb58098.jpg");
+    margin-top: 100px;
+    display: block;
+     }
+
+section {
+    background-color:    #ffefe9 ;
+    margin-top: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 100px;
+    outline-style: solid;
+    outline-width: 15px;
+    outline-color:   #030303    ;
+    border-radius: 10%;
+}
+
+span {
+    font-size: xx-large;
+    font-style:unset ;
+    color:  #f50e3f ;
+}
+div {
+    margin-top: 25px ;
+}
+
+#encodeButton {
+    width: 10%;
+    background-color: grey;
+    color: white;
+}
+
+#decodeButton {
+    width: 10%;
+    background-color: grey;
+    color: white;
+}
+span {
+    margin-top: auto;
+    margin-bottom: 10%;
+    width: 10%;
+    background-color: green;
+    color: white;
+    
+}
+#goBack {
+    width: 10%;
+    background-color: grey;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+

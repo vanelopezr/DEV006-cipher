@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>CIFRADO CÉSAR</h1>
+      <input id ="offset" type="number" inputmode="numeric" placeholder="Ingresa la clave" pattern="^[0-9]+" min="1" />
+
+<h2>Mensaje: </h2>
+<textarea  id = "string" placeholder="Escriba aquí el mensaje" cols="50" rows="10" >
+</textarea>
+
+<div><button id="encodeButton" >Cifrar</button>
+  <button id="decodeButton" >Descifrar</button></div>
+<h3>Mensaje Cifrado/Descifrado:</h3>
+<textarea id = "messageResult"  cols="50" rows="10" > </textarea> 
+<div><button id="goBack">Volver</button></div>
+
+    <script src="index.js" type="module"></script>
+
+  </section>
+  
+</body>
+</html>
