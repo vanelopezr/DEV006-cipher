@@ -38,15 +38,8 @@ div {
     width: 10%;
     background-color: grey;
     color: white;
-}
-span {
-    margin-top: auto;
-    margin-bottom: 10%;
-    width: 10%;
-    background-color: green;
-    color: white;
-    
-}
+}    
+
 #goBack {
     width: 10%;
     background-color: grey;

@@ -1,7 +1,6 @@
 const cipher = {
 
   encode: (offset, string) => {
-    //obtener los valores
     let result = "";
     if (typeof offset !== "number" || typeof string !== "string") {
       throw  TypeError ("Ingrese caracteres válidos"); }
@@ -9,7 +8,7 @@ const cipher = {
     for (let i = 0; i < string.length; i++) {
       const asciiPosition = string[i].charCodeAt();
       if (asciiPosition >= 65 && asciiPosition <= 90) {
-        //aplicar la formula
+        //aplicar la formula para obtener el numero ascii con el offset
         const asciiTxt = (((asciiPosition - 65 + offset) % 26) + 65);
         result += String.fromCharCode(asciiTxt);
         //agregar los espacios
