@@ -1,15 +1,16 @@
 import cipher from './cipher.js';
 //console.log(cipher);
-//llamar los elementos 
+//llamar los elementos del html 
 const offset = document.getElementById ("offset");
 const string = document.getElementById ("string");
 const result = document.getElementById ("messageResult");
 
-//poner en mayúsculas el texto
+//poner en mayúsculas el texto al escribir
 string.addEventListener("input", function() {
   const text = string.value.toUpperCase();
   string.value = text;
 });
+
 //ligar la funcion a mis botones
 const encodeButton = document.getElementById ("encodeButton");
 encodeButton.addEventListener("click",function () {
