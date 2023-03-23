@@ -11,7 +11,7 @@ string.addEventListener("input", function() {
   string.value = text;
 });
 
-//ligar la funcion a mis botones
+//ligar la función a mis botones
 const encodeButton = document.getElementById ("encodeButton");
 encodeButton.addEventListener("click",function () {
 
