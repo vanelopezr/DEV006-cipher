@@ -3,13 +3,22 @@ body {
     text-align: center;
     font-family: 'Source Code Pro', monospace;
     background-image: url("https://i.pinimg.com/564x/21/22/40/212240445cf5f74f0e8fcab8feb58098.jpg");
-    margin-top: 100px;
+    margin-top: 50px;
     display: block;
      }
+h1{
+    font-size: xx-large;
+    font-style:inherit;
+    color: grey;
+}
 
+p{
+    font-style: italic;
+    font-size: x-large;
+}
 section {
-    background-color:    #ffefe9 ;
-    margin-top: 200px;
+    background-color:    white ;
+    margin-top: 50px;
     margin-left: 250px;
     margin-right: 250px;
     margin-bottom: 100px;
@@ -19,9 +28,8 @@ section {
     border-radius: 10%;
 }
 
-span {
-    font-size: xx-large;
-    font-style:unset ;
+#messageResult {
+    font-size:larger;
     color:  #f50e3f ;
 }
 div {
