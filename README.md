@@ -21,6 +21,4 @@ Este proyecto se creó pensandolo como parte de un “Escape Room” en el que l
 
 En un principio se diseñó con 3 distintas pantallas, pero al final para que todo fuese más rapido por temas técnicos y también del uso (ya que los escape rooms suelen ser con limite de tiempo) se dejó simple, con solo una pantalla que le permite al jugador ingresar la clave, el mensaje, elegir cifrado o descrifrado y ver el resultado en pantalla, esto hace todo el proceso más rapido y sencillo. 
 
-![image](ttps://www.notion.so/Proyecto-1-Cipher-109b7793e53a4337a626f7197fe95947)
-
 El título de la aplicación está en cifrado cesar para aportar al enigma pero en <title> el nombre esta bien para dar una pequeña pista. Los colores se mantuvieron neutrales y la imagen de fondo muestra distintos tipos de “candados” para darle un poco de ambientación acorde a la temática.
