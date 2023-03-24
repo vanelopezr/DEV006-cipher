@@ -4,8 +4,9 @@ const cipher = {
     //declarar varible para el resultado
     let result = "";
     //typeError para ingresar caracteres válidos.
-    if (typeof offset !== "number" || typeof string !== "string") {
-      throw  TypeError ("Ingrese caracteres válidos"); }
+    if (offset <= 0 || string === "") {
+      throw  new TypeError ("Ingrese caracteres válidos");
+    }
     //iterar en cada letra y obtener el número ascii
     for (let i = 0; i < string.length; i++) {
       const asciiPosition = string[i].charCodeAt();
@@ -25,8 +26,9 @@ const cipher = {
 
   decode: (offset, string) => {
     let result = "";
-    if (typeof offset !== "number" || typeof string !== "string") {
-      throw  TypeError ("Ingrese caracteres válidos"); }
+    if (offset <= 0 || string === "") {
+      throw  new TypeError ("Ingrese caracteres válidos");
+    }
     for (let i = 0; i < string.length; i++) {
       const asciiPosition = string[i].charCodeAt();
       if (asciiPosition >= 65 && asciiPosition <= 90) {
